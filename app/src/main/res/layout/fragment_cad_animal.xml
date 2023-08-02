@@ -3,12 +3,147 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.animal.CadAnimalFragment">
+    tools:context="br.edu.ifsc.xap.mobile.manejo.ui.animal.CadAnimalFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cod_animal"
+                />
+
+            <EditText
+                android:id="@+id/etCodigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="@string/hint_cod_animal"
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sexo_animal"
+                />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbSexoM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/sexo_animal_m" />
+
+                    <RadioButton
+                        android:id="@+id/rbSexoF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/sexo_animal_f" />
+                </LinearLayout>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cd_animal_pai"
+                />
+
+            <EditText
+                android:id="@+id/etCodAnimalPai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="@string/hint_cod_animal"
+                />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cd_animal_mae"
+                />
+
+            <EditText
+                android:id="@+id/etCodAmimalMae"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="@string/hint_cod_animal"
+                />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/data_nascimento"
+                />
+
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <CheckBox
+                android:id="@+id/cbReprodutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reprodutor_externo" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/proprietario"
+                />
+
+            <Spinner
+                android:id="@+id/spProprietario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <Button
+                android:id="@+id/btSalvar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/botao_salvar" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </FrameLayout>
